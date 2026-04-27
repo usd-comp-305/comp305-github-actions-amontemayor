@@ -72,6 +72,19 @@ public class StringUtilsTest {
 
     }
 
+    @Test
+    void testReverseStringWithSpaces() {
+
+        String word = "race car";
+
+        String reversedWord = StringUtils.reverseString(word);
+
+        assertEquals("rac ecar", reversedWord);
+
+    }
+
+
+
 
 
 
