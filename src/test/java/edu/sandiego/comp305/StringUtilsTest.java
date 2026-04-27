@@ -61,6 +61,17 @@ public class StringUtilsTest {
 
     }
 
+    @Test
+    void testReverseStringOnPalindrome() {
+
+        String word = "racecar";
+
+        String reversedWord = StringUtils.reverseString(word);
+
+        assertEquals("racecar", reversedWord);
+
+    }
+
 
 
 
