@@ -39,6 +39,17 @@ public class StringUtilsTest {
 
     }
 
+    @Test
+    void testReverseStringWithEmptyString() {
+
+        String word = "";
+
+        String reversedWord = StringUtils.reverseString(word);
+
+        assertEquals("", reversedWord);
+
+    }
+
 
 
 
