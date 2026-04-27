@@ -83,6 +83,17 @@ public class StringUtilsTest {
 
     }
 
+    @Test
+    void testReverseStringWithCases() {
+
+        String word = "Banana";
+
+        String reversedWord = StringUtils.reverseString(word);
+
+        assertEquals("ananaB", reversedWord);
+
+    }
+
 
 
 
