@@ -10,6 +10,7 @@ public class StringUtils {
     public static String reverseString(final String word) {
 
         final StringBuilder letterBuffer = new StringBuilder();
+
         final char[] wordCharacters = word.toCharArray();
 
         final int wordSize = word.length();
