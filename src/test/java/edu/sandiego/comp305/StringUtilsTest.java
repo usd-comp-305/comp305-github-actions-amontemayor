@@ -6,12 +6,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StringUtilsTest {
 
+
+
     @Test
     void testReverseStringInvertsThreeLetterWord() {
 
-        String word = "cat";
+        final String word = "cat";
 
-        String reversedWord = StringUtils.reverseString(word);
+        final String reversedWord = StringUtils.reverseString(word);
 
         assertEquals("tac", reversedWord);
 
@@ -20,9 +22,9 @@ public class StringUtilsTest {
     @Test
     void testReverseStringInvertsFourLetterWord() {
 
-        String word = "talk";
+        final String word = "talk";
 
-        String reversedWord = StringUtils.reverseString(word);
+        final String reversedWord = StringUtils.reverseString(word);
 
         assertEquals("klat", reversedWord);
 
@@ -31,9 +33,9 @@ public class StringUtilsTest {
     @Test
     void testReverseStringInvertsTwoLetterWord() {
 
-        String word = "of";
+        final String word = "of";
 
-        String reversedWord = StringUtils.reverseString(word);
+        final String reversedWord = StringUtils.reverseString(word);
 
         assertEquals("fo", reversedWord);
 
@@ -42,9 +44,9 @@ public class StringUtilsTest {
     @Test
     void testReverseStringWithEmptyString() {
 
-        String word = "";
+        final String word = "";
 
-        String reversedWord = StringUtils.reverseString(word);
+        final String reversedWord = StringUtils.reverseString(word);
 
         assertEquals("", reversedWord);
 
@@ -53,9 +55,9 @@ public class StringUtilsTest {
     @Test
     void testReverseStringWithSingleCharacterString() {
 
-        String word = "a";
+        final String word = "a";
 
-        String reversedWord = StringUtils.reverseString(word);
+        final String reversedWord = StringUtils.reverseString(word);
 
         assertEquals("a", reversedWord);
 
@@ -64,9 +66,9 @@ public class StringUtilsTest {
     @Test
     void testReverseStringOnPalindrome() {
 
-        String word = "racecar";
+        final String word = "racecar";
 
-        String reversedWord = StringUtils.reverseString(word);
+        final String reversedWord = StringUtils.reverseString(word);
 
         assertEquals("racecar", reversedWord);
 
@@ -75,9 +77,9 @@ public class StringUtilsTest {
     @Test
     void testReverseStringWithSpaces() {
 
-        String word = "race car";
+        final String word = "race car";
 
-        String reversedWord = StringUtils.reverseString(word);
+        final String reversedWord = StringUtils.reverseString(word);
 
         assertEquals("rac ecar", reversedWord);
 
@@ -86,9 +88,9 @@ public class StringUtilsTest {
     @Test
     void testReverseStringWithCases() {
 
-        String word = "Banana";
+        final String word = "Banana";
 
-        String reversedWord = StringUtils.reverseString(word);
+        final String reversedWord = StringUtils.reverseString(word);
 
         assertEquals("ananaB", reversedWord);
 
