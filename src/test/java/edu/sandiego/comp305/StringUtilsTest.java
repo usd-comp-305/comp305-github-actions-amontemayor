@@ -28,6 +28,19 @@ public class StringUtilsTest {
 
     }
 
+    @Test
+    void testReverseStringInvertsTwoLetterWord() {
+
+        String word = "of";
+
+        String reversedWord = StringUtils.reverseString(word);
+
+        assertEquals("fo", reversedWord);
+
+    }
+
+
+
 
 
 }
