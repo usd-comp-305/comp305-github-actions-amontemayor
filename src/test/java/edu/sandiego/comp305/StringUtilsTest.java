@@ -50,6 +50,17 @@ public class StringUtilsTest {
 
     }
 
+    @Test
+    void testReverseStringWithSingleCharacterString() {
+
+        String word = "a";
+
+        String reversedWord = StringUtils.reverseString(word);
+
+        assertEquals("a", reversedWord);
+
+    }
+
 
 
 
