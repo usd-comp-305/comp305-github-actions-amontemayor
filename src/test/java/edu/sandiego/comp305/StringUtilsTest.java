@@ -17,4 +17,17 @@ public class StringUtilsTest {
 
     }
 
+    @Test
+    void testReverseStringInvertsFourLetterWord() {
+
+        String word = "talk";
+
+        String reversedWord = StringUtils.reverseString(word);
+
+        assertEquals("klat", reversedWord);
+
+    }
+
+
+
 }
